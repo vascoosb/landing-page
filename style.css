@@ -61,20 +61,28 @@ a {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-    width: 500px;
+    width: 600px;
 }
 
 .secondary-text {
     font-size: 18px;
     color: #E5E7EB;
-    width: 400px;
+    width: 600px;
+}
+
+.main-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .main-image {
+    width: auto;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
-    width: 600px;
-    height: auto;
 }
 
 img {
@@ -106,7 +114,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .card {
@@ -122,7 +130,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 15px;
+    gap: 35px;
     margin-bottom: 40px;
 }
 
@@ -155,8 +163,20 @@ img {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     align-items: center;
+}
+
+.third .cards {
+    gap: 135px;
+}
+
+.third .captions {
+    gap: 60px;
+}
+
+.third .captions .caption {
+    width: 200px;
 }
 
 .credit {
@@ -179,19 +199,19 @@ img {
 .fourth {
     flex-grow:1;
     display: flex;
-    padding: 80px;
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 80px;
     justify-content: center;
 }
 
 .container {
-    background: #6eb8d1;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
     gap: 80px;
-    border-radius: 10px;
     align-items: center;
 }
 
@@ -202,14 +222,15 @@ img {
 }
 
 .message {
-    color: #e5e7eb;
+    max-width: 500px;
+    font-size: 20px;
 }
 
 .second-button {
     background: #6eb8d1;
     color: white;
-    width: 120px;
-    height: 40px;
+    width: 200px;
+    height: 60px;
     border-radius: 15px;
     font-weight: 600;
     border-color: #e5e7eb;
