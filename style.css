@@ -19,16 +19,19 @@ body {
     font-size: 24px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+h2 {
+    font-size: 24px;
+    color: #e5e7eb;
+    margin-right: 15px;
+    margin-top: 12px;
+}
+
+.links {
     display: flex;
 }
 
 a {
     text-decoration: none;
-    color: #e5e7eb;
     font-size: 18px;
     margin: 10px;
 }
@@ -47,8 +50,8 @@ a {
     flex-grow: 1;
     align-items: center;
     gap: 40px;
-    padding: 60px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 130px;
 }
 
 .description {
@@ -60,14 +63,15 @@ a {
 .main-text {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: #f0f3f6;
     width: 600px;
 }
 
 .secondary-text {
-    font-size: 18px;
+    font-size: 16px;
     color: #E5E7EB;
     width: 600px;
+    margin-bottom: 18px;
 }
 
 .main-images {
@@ -227,7 +231,7 @@ img {
 }
 
 .second-button {
-    background: #6eb8d1;
+    background: #9eb7d8;
     color: white;
     width: 200px;
     height: 60px;
@@ -235,6 +239,10 @@ img {
     font-weight: 600;
     font-size: 18px;
     border-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .footer {
