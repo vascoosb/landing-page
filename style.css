@@ -227,6 +227,7 @@ a {
     padding: 50px;
     padding-bottom: 80px;
     justify-content: center;
+    
 }
 
 .container {
@@ -237,6 +238,7 @@ a {
     padding-right: 100px;
     gap: 80px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .exclamation {
