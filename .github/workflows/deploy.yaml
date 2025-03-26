@@ -24,7 +24,7 @@ jobs:
 
     # Sync the files to the S3 bucket
     - name: Deploy to S3
-      run: aws s3 sync ./ s3://your-bucket-name --delete
+      run: aws s3 sync ./ s3://cloudportfolio --delete
 
     # Invalidate the CloudFront cache
     - name: Invalidate CloudFront Cache
