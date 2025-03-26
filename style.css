@@ -51,7 +51,7 @@ a {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     padding-top: 80px;
     padding-bottom: 130px;
     flex-wrap: wrap;
@@ -60,22 +60,24 @@ a {
 .description {
     display:flex;
     flex-direction: column;
-    gap: 10px;
     
 }
 
 .main-text {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 900;
     color: #f0f3f6;
-    width: 600px;
+    width: 800px;
+    text-align: start;
 }
 
 .secondary-text {
-    font-size: 16px;
+    font-size: 17px;
     color: #E5E7EB;
-    width: 600px;
+    width: 750px;
     margin-bottom: 18px;
+    margin-top: 20px;
+    text-align: start;
 }
 
 .main-images {
@@ -112,6 +114,7 @@ a {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    gap: 30px;
 }
 
 .projects {
@@ -132,11 +135,24 @@ a {
     gap: 20px;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 5px 10px;
+    padding-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.15); /* Zoom slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project_title {
-    font-size: larger;
+    font-size: 22px;
+}
+
+.tech-icons {
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .project_description {
@@ -153,12 +169,13 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .card {
     align-items:flex-start;
     justify-items: center;
+    width: 300px;
 }
 
 .card-image {
@@ -192,9 +209,10 @@ a {
 }
 
 .caption {
-    width: 150px;
+    width: 300px;
     text-align: center;
     flex-grow: 1;
+    margin-top: 20px;
 }
 
 .first-button {
