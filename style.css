@@ -114,6 +114,40 @@ a {
     color: #1F2937;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    background-color: #f0f0f0;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 10px;
+}
+
+.project_title {
+    font-size: larger;
+}
+
+.project_description {
+    text-align: left;
+}
+
+.project_description li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
