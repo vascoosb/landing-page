@@ -67,7 +67,7 @@ a {
     font-size: 40px;
     font-weight: 900;
     color: #f0f3f6;
-    width: 800px;
+    width: 600px;
     text-align: start;
 }
 
@@ -134,7 +134,7 @@ a {
     background-color: #f0f0f0;
     gap: 20px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
     padding-top: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -162,6 +162,25 @@ a {
 .project_description li {
     margin-bottom: 8px;
     line-height: 1.5;
+}
+
+.github-link {
+    display: inline-block;
+    margin: 10px 50px;
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #555;
+}
+
+.video_caption {
+    font-style: italic;
 }
 
 .cards {
@@ -327,4 +346,26 @@ a {
     align-items: center;
     color: white;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-text {
+        font-size: 28px;
+        text-align: center;
+    }
+    .secondary-text {
+        font-size: 16px;
+        text-align: center;
+        width: auto;
+    }
+    .first {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .main-image {
+        max-width: 100%;
+        height: auto;
+    }
 }
