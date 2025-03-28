@@ -201,7 +201,9 @@ a {
 }
 
 .card {
+    flex-direction: column;
     justify-items: center;
+    align-items: center;
     width: 300px;
 }
 
