@@ -201,9 +201,11 @@ a {
 }
 
 .card {
+    display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    text-align: center;
     width: 300px;
 }
 
