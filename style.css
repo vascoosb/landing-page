@@ -194,6 +194,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     margin-left: 7vw;
     margin-right: 7vw;
@@ -446,6 +447,10 @@ a {
 
     .cards {
         gap: 12vw;
+    }
+
+    .card {
+        width: 60vw;
     }
 
     .card-image {
