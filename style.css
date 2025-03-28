@@ -136,6 +136,7 @@ a {
     flex-direction: column;
     width: 500px;
     text-align: center;
+    align-items: center;
     background-color: #f0f0f0;
     gap: 20px;
     border-radius: 20px;
@@ -199,7 +200,6 @@ a {
 }
 
 .card {
-    align-items:flex-start;
     justify-items: center;
     width: 300px;
 }
@@ -408,12 +408,28 @@ a {
         width: 70vw;
     }
 
+    .project:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
     .project_title {
         font-size: 3.2vw;
     }
 
+    .tech-icons img {
+        width: 7vw;
+        height: 7vw;
+    }
+
     .project_description {
         font-size: 2.3vw;
+    }
+
+    .project a {
+        width: 30vw;
+        height: 5vw;
+        font-size: 3vw;
     }
 
     .outcome {
@@ -428,13 +444,18 @@ a {
         padding-top: 5%;
     }
 
+    .cards {
+        gap: 12vw;
+    }
+
     .card-image {
         width: 20vw;
         height: 20vw;
     }
 
     .caption {
-        font-size: 3vw;
+        font-size: 2.4vw;
+        width: 50vw;
     }
 
     .fourth {
@@ -449,8 +470,20 @@ a {
         gap: 5vw;
     }
 
+    .container a {
+        width: 30vw;
+        height: 10vw;
+        font-size: 3vw;
+    }
+
     .message {
         font-size: 3vw;
+    }
+
+
+
+    .footer {
+        font-size: 2vw;
     }
 
 }
