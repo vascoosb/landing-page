@@ -38,6 +38,11 @@ a {
     margin: 10px;
 }
 
+.icon-image {
+    width: 40px;
+    height: auto;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -82,20 +87,20 @@ a {
 
 .main-images {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    max-width: 100%; /* Prevent overflow */
 }
 
 .main-image {
-    width: auto;
     height: 300px;
+    width: 200px;
+    object-fit: cover; /* Ensures images scale proportionally */
     border-radius: 10px;
     overflow: hidden;
 }
-
-
 
 .second {
     display: flex;
@@ -188,7 +193,9 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 .card {
@@ -260,10 +267,6 @@ a {
     padding-top: 50px;
     padding-bottom: 80px;
     align-items: center;
-}
-
-.third .cards {
-    gap: 135px;
 }
 
 .third .captions {
@@ -349,23 +352,75 @@ a {
 }
 
 @media (max-width: 768px) {
+    .header h2 {
+        font-size: 3.5vw;
+    }
+
+    .links h2 {
+        font-size: 3.5vw;
+    }
+
+    .first {
+        gap: 10px;
+        padding-top: 5%;
+        padding-bottom: 15%;
+    }
+    
     .main-text {
-        font-size: 28px;
-        text-align: center;
+        font-size: 5vw; /* Scales with the viewport width */
+        width: 90%;
+        padding-left: 30px;
     }
     .secondary-text {
-        font-size: 16px;
-        text-align: center;
-        width: auto;
+        font-size: 2.5vw;
+        width: 90%;
+        padding-left: 30px;
     }
-    .first {
-        flex-direction: column;
-        gap: 20px;
-        padding: 40px 20px;
-        text-align: center;
+    .main-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
+
     .main-image {
-        max-width: 100%;
-        height: auto;
+        width: 25vw; /* Scales relative to the viewport width */
+        height: 35vw; /* Maintains aspect ratio */
+    }
+
+    .second {
+        padding-top: 5%;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .projects {
+        gap: 30px;
+        margin-top: 2%;
+    }
+
+    .project {
+        width: 70vw;
+    }
+
+    .project_title {
+        font-size: 3.2vw;
+    }
+
+    .project_description {
+        font-size: 2.3vw;
+    }
+
+    .outcome {
+        font-size:2.3vw;
+    }
+
+    .video_caption {
+        font-size:2.4vw;
+    }
+
+    .third {
+        padding-top: 5%;
     }
 }
