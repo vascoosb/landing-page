@@ -223,18 +223,6 @@ a {
     object-fit: cover;
 }
 
-.card-image .aws-image {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-}
-
-.card-image .linux-image {
-    object-fit: contain;
-    height: 100%;
-    width: auto;
-}
-
 .caption {
     width: 300px;
     text-align: center;
@@ -267,31 +255,6 @@ a {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 80px;
-    align-items: center;
-}
-
-.third .captions {
-    gap: 60px;
-}
-
-.third .captions .caption {
-    width: 200px;
-}
-
-.credit {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.quote {
-    font-size: 36px;
-    font-style: italic;
-    color: #1F2937;
-    display:flex;
-    justify-content: center;
     align-items: center;
 }
 
