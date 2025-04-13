@@ -50,7 +50,7 @@
             <div class="projects">
                 <div class="project">
                     <div class="project_title">
-                        <strong>Personal Portfolio Website</strong>
+                        <strong>Smart Portfolio Website</strong>
                     </div>
                     <div class="tech-icons">
                         <img src="images/CloudFront.png" alt="CloudFront" width="35">
@@ -82,7 +82,7 @@
                 </div>
                 <div class="project">
                     <div class="project_title">
-                        <strong>CI/CD Pipeline for Portfolio</strong>
+                        <strong>Silent Scalper (In Progress)</strong>
                     </div>
                     <div class="tech-icons">
                         <img src="images/CloudFront.png" alt="CloudFront" width="35">
@@ -91,27 +91,21 @@
                     </div>
                     <div class="project_description">
                         <ul>
-                            <li>Implemented a fully automated <strong>CI/CD pipeline</strong> to deploy a static website to <strong>AWS S3</strong>.</li>
-                            <li>Distributed the site via <strong>CloudFront</strong> for fast and secure content delivery.</li>
-                            <li>Utilized <strong>GitHub Actions</strong> to automate the deployment process on every code push.</li>
-                            <li>Integrated <strong>cache invalidation</strong> to ensure updates are immediately reflected.</li>
+                            <li>Designed a serverless ingestion pipeline using S3, Lambda, and DynamoDB</li>
+                            <li>Incoming files uploaded to S3 trigger Lambda to process metadata and validate structure</li>
+                            <li>Faulty files automatically moved to a quarantine bucket for review</li>
+                            <li>Critical errors trigger SNS alerts for proactive handling</li>
+                            <li>Monitoring and error tracking handled via CloudWatch logs and metrics</li>
                         </ul>
                     </div>
                     <div class="outcome">
-                    <strong>Outcome:</strong> Integrated a CI/CD pipeline using GitHub Actions and CloudFront cache invalidation 
-                        to automatically update website with every push.
-                    </div>
-                    <a href="https://github.com/vascoosb/landing-page#" target="_blank" class="github-link">View on GitHub</a>
-                    <video width="100%" controls>
-                        <source src="images/screen_workflow.mkv" type="video/mp4">
-                    </video>
-                    <div class="video_caption">
-                        Github Actions: workflows in place
+                    <strong>Outcome (Planned):</strong> Build a production-grade, serverless data workflow 
+                    with error isolation, alerting, and real-time visibility.
                     </div>
                 </div>
                 <div class="project">
                     <div class="project_title">
-                        <strong>Serverless Web App</strong>
+                        <strong>Smart Vault (In Progress)</strong>
                     </div>
                     <div class="tech-icons">
                         <img src="images/Lambda.png" alt="Lambda" width="35">
@@ -120,15 +114,21 @@
                     </div>
                     <div class="project_description">
                         <ul>
-                            <li>Built a dynamic serverless web application using <strong>AWS Lambda</strong>, <strong>API Gateway</strong>, and <strong>DynamoDB</strong>.</li>
-                            <li>Handled user input via an <strong>API endpoint</strong>, storing data in a <strong>NoSQL database</strong>.</li>
-                            <li>Implemented data retrieval and processing functions to ensure efficient and scalable backend operations.</li>
+                            <li>Uses Terraform to deploy a complete EC2 backup system using Lambda + EventBridge</li>
+                            <li>Automatically tags EC2 instances and triggers EBS snapshots on schedule</li>
+                            <li>Implements retention policies for auto-deletion of old snapshots</li>
+                            <li>Sends SNS notifications for success/failure events</li>
+                            <li>Fully managed as Infrastructure as Code</li>
                         </ul>
+                    </div>
+                    <div class="outcome">
+                        <strong>Outcome (Planned):</strong> Deliver a scalable, cost-efficient backup system with 
+                        snapshot lifecycle automation and full deployment via Terraform.
                     </div>
                 </div>
                 <div class="project">
                     <div class="project_title">
-                        <strong>Terraform Infrastructure Deployment</strong>
+                        <strong>AI Customer Service Bot (In Progress)</strong>
                     </div>
                     <div class="tech-icons">
                         <img src="images/Terraform.png" alt="Terraform" width="35">
@@ -137,10 +137,16 @@
                     </div>
                     <div class="project_description">
                         <ul>
-                            <li>Automated <strong>infrastructure deployment</strong> using <strong>Terraform</strong> to provision <strong>AWS resources</strong>.</li>
-                            <li>Configured <strong>API Gateway</strong>, <strong>Lambda functions</strong>, and <strong>DynamoDB tables</strong> in a modular and reusable setup.</li>
-                            <li>Integrated the <strong>Terraform configuration into CI/CD pipelines</strong> for seamless updates and infrastructure management.</li>
+                            <li>Incoming messages handled via API Gateway, passed to a Lambda function
+                            <li>Conversation state stored and retrieved from DynamoDB for context continuity</li>                                
+                            <li>Uses AWS Bedrock to generate intelligent, context-aware responses</li>                               
+                            <li>Alerts for critical failures sent via SNS notifications</li>                               
+                            <li>Full monitoring via CloudWatch metrics and logs</li>
                         </ul>
+                    </div>
+                    <div class="outcome">
+                        <strong>Outcome (Planned):</strong> Create a lightweight AI-driven chatbot 
+                        architecture that simulates real-world customer service in a cloud-native, serverless setup.
                     </div>
                 </div>
             </div>
