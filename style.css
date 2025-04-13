@@ -203,7 +203,6 @@ a {
 .card {
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
     text-align: center;
     width: 300px;
@@ -343,6 +342,11 @@ a {
         width: 90%;
         padding-left: 30px;
     }
+
+    .description {
+        margin-right: 20px;
+    }
+
     .secondary-text {
         font-size: 2.5vw;
         width: 90%;
