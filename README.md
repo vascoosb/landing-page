@@ -16,6 +16,11 @@ This project is a static portfolio website designed to showcase cloud and DevOps
 - GitHub Actions
 - AWS CloudWatch
 
+## In Progress
+
+- Adding a WAF (Web Application Firewall)
+- Enabling S3 bucket access logs
+
 ## Outcome
 
 Dynamic, professional web presence with automated deployments and monitoring.
